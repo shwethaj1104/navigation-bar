@@ -101,14 +101,15 @@ p {
   color: var(--clr-grey-5);
 }
 .main-div{
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+  display: grid;
+  gap: 1rem;
 }
 img{
   margin: 0rem 5rem 0rem 5rem;
     border-radius: 2rem;
     box-shadow: 0px 2px 8px 0px #00a8ea66;
+    width: 71%;
+    height: 150%;
 }
 @media screen and (min-width: 800px) {
   h1 {
