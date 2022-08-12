@@ -1,11 +1,7 @@
 import React from 'react'
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
 export const links = [
-  // {
-  //   id: 1,
-  //   url: '/',
-  //   text: 'random',
-  // },
+
   {
     id: 2,
     url: '/about',
@@ -31,7 +27,7 @@ export const links = [
 export const social = [
   {
     id: 1,
-    url: 'https://www.twitter.com',
+    url: 'https://about.facebook.com/',
     icon: <FaFacebook />,
   },
   {
@@ -41,12 +37,12 @@ export const social = [
   },
   {
     id: 3,
-    url: 'https://www.twitter.com',
+    url: 'https://www.linkedin.com/in/shwetha-j-b26883159/',
     icon: <FaLinkedin />,
   },
   {
     id: 4,
-    url: 'https://www.twitter.com',
+    url: 'https://www.behance.net/joblist?sdid=V6NZKQSK&mv=search',
     icon: <FaBehance />,
   },
 ]
