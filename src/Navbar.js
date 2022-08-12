@@ -5,51 +5,51 @@ import logo from './logo.svg'
 
 const Navbar = () => {
 
-  const [showLinks,setShowLinks] = useState(false);
+  const [showLinks, setShowLinks] = useState(false);
   const linksRef = useRef(null)
   const linksContainerRef = useRef(null)
 
-  useEffect(()=>{
+  useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
-    if(showLinks){
+    if (showLinks) {
       linksContainerRef.current.style.height = `${linksHeight}px`
-    }else{
+    } else {
       linksContainerRef.current.style.height = '0px'
     }
-  },[showLinks])
+  }, [showLinks])
 
   return (
     <nav>
       <div className='nav-center'>
         <div className='nav-header'>
-          <img src={logo} />
-          <button className='nav-toggle' onClick={()=>setShowLinks(!showLinks)}>
+          {/* <img src={logo} /> */}
+          <button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}>
             <FaBars />
           </button>
         </div>
         {/* <div className={`${showLinks ?'links-container show-container' :'links-container' }`}> */}
         <div className='links-container show-container' ref={linksContainerRef}>
           <ul className='links' ref={linksRef}>
-            {links.map((link)=>{
-              const {id,url,text} = link
-              return(
+            {links.map((link) => {
+              const { id, url, text } = link
+              return (
                 <li key={id}>
-                <a href={url}>{text}</a>
-              </li>
+                  <a href={url}>{text}</a>
+                </li>
               )
             })}
           </ul>
         </div>
         <ul className='social-icons'>
-        {social.map((item)=>{
-              const {id,url,icon} = item
-              return(
-                <li key={id}>
-                <a href={url}>{icon}</a>
+          {social.map((item) => {
+            const { id, url, icon } = item
+            return (
+              <li key={id}>
+                <a target='blank' href={url}>{icon}</a>
               </li>
-              )
-            })}
-          
+            )
+          })}
+
         </ul>
       </div>
     </nav>

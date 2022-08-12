@@ -65,6 +65,9 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
+nav{
+  height: 6rem !important;
+}
 ul {
   list-style-type: none;
 }
@@ -196,7 +199,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
   .nav-header {
     padding: 0;
@@ -209,10 +212,12 @@ nav {
   }
   .links {
     display: flex;
+    gap: 1.5rem;
   }
   .links a {
     padding: 0;
     margin: 0 0.5rem;
+    font-size: 1.5rem;
   }
   .links a:hover {
     padding: 0;
@@ -225,6 +230,7 @@ nav {
     margin: 0 0.5rem;
     color: var(--clr-primary-5);
     transition: var(--transition);
+    font-size: 1.5rem;
   }
   .social-icons a:hover {
     color: var(--clr-primary-7);
