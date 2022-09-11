@@ -1,4 +1,4 @@
-# Navigation-Bar
+# NavigationBar
 Simple application built on React.js.
 
 
