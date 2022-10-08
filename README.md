@@ -1,4 +1,5 @@
 # Navigation Bar
+
 Simple Navigator built on React.js.
 
 Checkout application at : https://navigation-bar-zeta.vercel.app/
